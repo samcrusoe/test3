@@ -16,6 +16,17 @@ class ProjectWhereInput {
   @Field(() => StringNullableFilter, {
     nullable: true,
   })
+  comment?: StringNullableFilter;
+
+  @ApiProperty({
+    required: false,
+    type: StringNullableFilter,
+  })
+  @Type(() => StringNullableFilter)
+  @IsOptional()
+  @Field(() => StringNullableFilter, {
+    nullable: true,
+  })
   description?: StringNullableFilter;
 
   @ApiProperty({

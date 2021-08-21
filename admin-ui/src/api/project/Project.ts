@@ -1,6 +1,7 @@
 import { Task } from "../task/Task";
 
 export type Project = {
+  comment: string | null;
   createdAt: Date;
   description: string | null;
   dueDate: Date | null;

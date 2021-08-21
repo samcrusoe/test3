@@ -62,6 +62,7 @@ export class ProjectControllerBase {
     return await this.service.create({
       data: data,
       select: {
+        comment: true,
         createdAt: true,
         description: true,
         dueDate: true,
@@ -107,6 +108,7 @@ export class ProjectControllerBase {
     const results = await this.service.findMany({
       ...args,
       select: {
+        comment: true,
         createdAt: true,
         description: true,
         dueDate: true,
@@ -147,6 +149,7 @@ export class ProjectControllerBase {
     const result = await this.service.findOne({
       where: params,
       select: {
+        comment: true,
         createdAt: true,
         description: true,
         dueDate: true,
@@ -208,6 +211,7 @@ export class ProjectControllerBase {
         where: params,
         data: data,
         select: {
+          comment: true,
           createdAt: true,
           description: true,
           dueDate: true,
@@ -249,6 +253,7 @@ export class ProjectControllerBase {
       return await this.service.delete({
         where: params,
         select: {
+          comment: true,
           createdAt: true,
           description: true,
           dueDate: true,

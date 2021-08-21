@@ -14,6 +14,15 @@ class ProjectOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
+  comment?: SortOrder;
+
+  @ApiProperty({
+    required: false,
+    enum: ["Asc", "Desc"],
+  })
+  @Field(() => SortOrder, {
+    nullable: true,
+  })
   createdAt?: SortOrder;
 
   @ApiProperty({
