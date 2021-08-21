@@ -11,6 +11,7 @@ export const ProjectCreate = (props: CreateProps): React.ReactElement => {
   return (
     <Create {...props}>
       <SimpleForm>
+        <TextInput label="Comment" source="comment" />
         <TextInput label="Description" multiline source="description" />
         <DateTimeInput label="Due Date" source="dueDate" />
         <TextInput label="Name" source="name" />

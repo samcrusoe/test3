@@ -1,6 +1,7 @@
 import { SortOrder } from "../../util/SortOrder";
 
 export type ProjectOrderByInput = {
+  comment?: SortOrder;
   createdAt?: SortOrder;
   description?: SortOrder;
   dueDate?: SortOrder;

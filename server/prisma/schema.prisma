@@ -68,6 +68,7 @@ model Product {
 }
 
 model Project {
+  comment     String?
   createdAt   DateTime  @default(now())
   description String?
   dueDate     DateTime?
